@@ -5,44 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adaptive Landing Page</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to Our Service</h1>
-    <p id="deviceType"></p>
+  <header class="bg-red-400 text-white py-6 text-center">
+    <h1 class="text-2xl md:text-3xl font-semibold">Welcome to Our Service</h1>
+    <p class="mt-2 text-sm opacity-90">Responsive layout powered by Tailwind CDN</p>
   </header>
 
   <main>
-    <section id="hero">
-      <h2 id="heroTitle">Discover Our Solutions</h2>
-      <p id="heroDescription">
-        We provide top-notch solutions tailored to your needs.
-      </p>
+    <section id="hero" class="text-center md:text-left mb-6">
+      <h2 id="heroTitle" class="text-3xl md:text-4xl font-bold mb-3">Discover Our Solutions</h2>
+      <p id="heroDescription" class="text-lg md:text-xl text-gray-700">We provide top-notch solutions tailored to your needs.</p>
     </section>
 
-    <section id="features">
-      <h2>Features</h2>
-      <div id="featureList">
-        <!-- Features will be dynamically inserted here -->
+    <section id="features" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Features</h2>
+      <div id="featureList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="feature bg-white p-6 border rounded shadow">Feature 1</div>
+        <div class="feature bg-white p-6 border rounded shadow">Feature 2</div>
+        <div class="feature bg-white p-6 border rounded shadow">Feature 3</div>
+        <div class="feature bg-white p-6 border rounded shadow">Feature 4</div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Get in touch with us for more information.</p>
+      <h2 class="text-2xl font-semibold mb-2">Contact Us</h2>
+      <p class="mb-4 text-gray-700">Get in touch with us for more information.</p>
 
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <form id="contactForm" class="max-w-xl mx-auto md:mx-0 flex flex-col gap-3">
+        <label for="name" class="text-sm">Name:</label>
+        <input type="text" id="name" name="name" required class="p-2 border rounded" />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email" class="text-sm">Email:</label>
+        <input type="email" id="email" name="email" required class="p-2 border rounded" />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message" class="text-sm">Message:</label>
+        <textarea id="message" name="message" rows="4" required class="p-2 border rounded"></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="mt-2 py-2 px-4 bg-red-400 text-white rounded hover:bg-red-500">Send Message</button>
       </form>
     </section>
   </main>
@@ -51,6 +53,6 @@
     <p>&copy; 2024 Our Service</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Tailwind CDN is used; JS-based device detection removed -->
 </body>
 </html>
