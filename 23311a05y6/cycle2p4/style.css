@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header, footer{
+text-align: center;
+background-color: lightcoral;
+color: white;
+padding: 10px;
+}
+
+main{
+padding: 10px;
+display: flex;
+justify-content: space-around;
+background-color: lightblue;
+}
+
+#loading{
+font-size: 20px;
+font-weight: bold;
+margin: 20px;
+}
+
+table{
+border-collapse: collapse;
+width: 100%;
+margin-top: 20px;
+}
+
+th, td{
+padding: 8px;
+text-align: left;
+border: 1px solid #ddd;
+}
+
+th{
+background-color: #f2f2f2;
+color: black;
+}
